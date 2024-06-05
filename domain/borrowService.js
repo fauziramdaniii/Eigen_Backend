@@ -74,7 +74,7 @@ class BorrowService {
     });
 
     if (!borrow) {
-      throw new Error('Book not borrowed by the member');
+      throw new Error('Book not borrowed by the member because have a penalized');
     }
 
     const borrowDate = new Date(borrow.borrowDate);
